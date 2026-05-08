@@ -1,11 +1,27 @@
 from transformers import pipeline
 
 
-sentiment_pipeline = pipeline(
+'''sentiment_pipeline = pipeline(
     task="text-classification",
     model="ProsusAI/finbert",
     tokenizer="ProsusAI/finbert"
-)
+)'''
+
+sentiment_pipeline = None
+
+
+def get_pipeline():
+    global sentiment_pipeline
+
+    if sentiment_pipeline is None:
+        sentiment_pipeline = pipeline(
+            task="text-classification",
+            model="ProsusAI/finbert",
+            tokenizer="ProsusAI/finbert"
+        )
+
+    return sentiment_pipeline
+
 
 
 def analyze_financial_sentiment(text: str):
