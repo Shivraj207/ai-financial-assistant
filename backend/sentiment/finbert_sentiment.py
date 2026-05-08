@@ -1,16 +1,14 @@
 from transformers import pipeline
 
-
-'''sentiment_pipeline = pipeline(
-    task="text-classification",
-    model="ProsusAI/finbert",
-    tokenizer="ProsusAI/finbert"
-)'''
-
+# Lazy-loaded pipeline
 sentiment_pipeline = None
 
 
 def get_pipeline():
+    """
+    Load FinBERT pipeline only when needed.
+    Helps reduce startup memory usage on deployment.
+    """
     global sentiment_pipeline
 
     if sentiment_pipeline is None:
@@ -21,7 +19,6 @@ def get_pipeline():
         )
 
     return sentiment_pipeline
-
 
 
 def analyze_financial_sentiment(text: str):
@@ -38,7 +35,11 @@ def analyze_financial_sentiment(text: str):
             "confidence": 0.0
         }
 
-    result = sentiment_pipeline(text[:512])[0]
+    # Load model only when required
+    pipe = get_pipeline()
+
+    # Limit input length
+    result = pipe(text[:512])[0]
 
     return {
         "sentiment": result["label"],
