@@ -133,24 +133,26 @@ QDRANT_API_KEY=your_qdrant_api_key
 
 Never upload .env to GitHub.
 
-How to Run Locally
-1. Clone the Repository
+---
+
+## How to Run Locally
+### 1. Clone the Repository
 git clone https://github.com/Shivraj207/ai-financial-assistant.git
 cd ai-financial-assistant
-2. Create Virtual Environment
+### 2. Create Virtual Environment
 python -m venv venv
 source venv/bin/activate
 
 For Windows:
 venv\Scripts\activate
 
-3. Install Dependencies
+### 3. Install Dependencies
 pip install -r requirements.txt
-4. Add Environment Variables
+### 4. Add Environment Variables
 
 Create a .env file and add your API keys.
 
-5. Run FastAPI Backend
+### 5. Run FastAPI Backend
 uvicorn backend.main:app --reload
 
 Backend runs at:
@@ -159,7 +161,9 @@ http://127.0.0.1:8000
 API docs:
 http://127.0.0.1:8000/docs
 
-6. Run Streamlit Frontend
+---
+
+### 6. Run Streamlit Frontend
 
 Open a second terminal:
 streamlit run frontend/app.py
@@ -167,17 +171,23 @@ streamlit run frontend/app.py
 Frontend runs at:
 http://localhost:8501
 
-Example Questions
+---
+
+## Example Questions
 What are the major risk factors mentioned in the report?
 What risks are associated with foreign exchange rates?
 How could macroeconomic conditions affect the company?
 What are the company’s major revenue sources?
 
-Example Sentiment Inputs
+---
+
+## Example Sentiment Inputs
 Apple reported strong revenue growth and improved margins this quarter.
 The company warned about declining demand and lower profit margins.
 
-Key Learning Outcomes
+---
+
+## Key Learning Outcomes
 Built an end-to-end RAG pipeline
 Integrated vector search using Qdrant
 Used embeddings for semantic retrieval
@@ -186,7 +196,9 @@ Built a FastAPI backend and Streamlit frontend
 Added financial sentiment analysis using FinBERT
 Designed citation-based grounded financial answers
 
-Future Improvements
+---
+
+## Future Improvements
 Multi-document comparison
 Financial ratio extraction
 Risk severity scoring
@@ -197,4 +209,7 @@ Authentication
 Dashboard analytics
 Disclaimer
 
+---
+
+## Advice
 This project is for educational and portfolio purposes only. It does not provide financial advice or investment recommendations.
