@@ -2,6 +2,8 @@
 
 An AI-powered financial document assistant that allows users to upload financial PDFs, ask questions, receive grounded answers with citations, and analyze financial sentiment using FinBERT.
 
+---
+
 ## Project Overview
 
 This project helps users quickly understand financial documents such as annual reports, earnings reports, investor presentations, and financial filings.
