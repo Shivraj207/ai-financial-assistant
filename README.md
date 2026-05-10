@@ -86,7 +86,7 @@ Confidence Score
 ---
 
 ## Project Structure
-``text
+```text
 ai-financial-assistant/
 │
 ├── backend/
@@ -118,6 +118,7 @@ ai-financial-assistant/
 ├── .env.example
 ├── .gitignore
 └── README.md
+
 ```
 ---
 
