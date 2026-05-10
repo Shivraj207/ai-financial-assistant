@@ -44,6 +44,8 @@ Instead of manually reading long documents, users can upload a PDF and ask finan
 - PyMuPDF
 - Requests
 
+---
+
 ## Architecture
 
 ```text
