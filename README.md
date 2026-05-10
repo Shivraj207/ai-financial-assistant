@@ -10,6 +10,8 @@ This project helps users quickly understand financial documents such as annual r
 
 Instead of manually reading long documents, users can upload a PDF and ask financial questions. The system retrieves relevant context, reranks it, and generates grounded answers with citations.
 
+---
+
 ## Features
 
 - Upload financial PDF documents
@@ -25,6 +27,8 @@ Instead of manually reading long documents, users can upload a PDF and ask finan
 - FastAPI backend
 - Streamlit frontend
 - Clear/reset vector database option
+
+---
 
 ## Tech Stack
 
