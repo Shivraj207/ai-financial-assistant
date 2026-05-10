@@ -86,6 +86,7 @@ Confidence Score
 ---
 
 ## Project Structure
+``text
 ai-financial-assistant/
 │
 ├── backend/
@@ -117,8 +118,10 @@ ai-financial-assistant/
 ├── .env.example
 ├── .gitignore
 └── README.md
+```
+---
 
-##Environment Variables
+## Environment Variables
 
 Create a .env file in the root directory:
 
