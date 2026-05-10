@@ -135,6 +135,11 @@ Never upload .env to GitHub.
 
 ---
 
+## Live URL
+click: https://ai-financial-assistant-c4fqv4dhatt3gjgmxbhqho.streamlit.app/
+
+---
+
 ## How to Run Locally
 ### 1. Clone the Repository
 git clone https://github.com/Shivraj207/ai-financial-assistant.git
