@@ -74,6 +74,7 @@ Answer with Citations
 ---
 
 ## Sentiment Analysis Flow
+```text
 Financial Text / News / Headline
         ↓
 FinBERT Model
@@ -81,6 +82,8 @@ FinBERT Model
 Positive / Negative / Neutral Sentiment
         ↓
 Confidence Score
+```
+---
 
 ## Project Structure
 ai-financial-assistant/
