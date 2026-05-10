@@ -70,6 +70,8 @@ Jina Reranking
 Gemini Financial Reasoning
         ↓
 Answer with Citations
+```
+---
 
 ## Sentiment Analysis Flow
 Financial Text / News / Headline
